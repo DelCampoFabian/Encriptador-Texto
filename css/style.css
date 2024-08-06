@@ -1,0 +1,131 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Roboto:wght@400;700&display=swap');
+
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: "Inter";
+}
+body{
+    background-color: #E5E5E5;
+    height: 100vh;
+}
+
+.header{
+    height: 96px;
+    display: flex;
+    align-items: center;
+}
+.main{
+    width: 90%;
+    margin: auto;
+    height: 40vh;
+    background-color: #E5E5E5;
+}
+.main__text{
+    width: 100%;
+    height: 100%;
+    padding: 5px;
+    font-size: 32px;
+    color: #0A3871;
+    border: none;
+    background-color: #E5E5E5;
+    
+}
+.main__text::placeholder{
+    color: #0A3871;
+    opacity: 100%;
+
+}
+.main__restricciones {
+    margin-top: 64px;
+    color: #495057;
+    font-size: 12px;
+    display: flex;
+    gap: 5px;
+}
+.main__section{
+    width: 100%;
+    margin-top: 16px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 24px;
+}
+.main__section__encriptar, .main__section__desencriptar{
+    padding: 16px;
+    border-radius: 18px;
+}
+.main__section__encriptar{
+    background-color:#0A3871;
+    color: #fff;
+    border: 1px solid #0A3871;
+}
+.main__section__desencriptar{
+    background-color:#fff;
+    color: #0A3871;
+    border: 1px solid #0A3871;
+}
+
+.main__section__mensaje{
+    margin-top: 64px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    padding: 32px;
+    text-align: center;
+    box-shadow: 0px 2px 15px 0px #495057;
+    border-radius: 24px;
+    margin-bottom: 120px;
+    background-color: #fff;
+    overflow: hidden;
+}
+.section__cartel{
+    font-size: 24px;
+}
+.section__parrafo{
+    font-size: 16px;
+    color: #495057;
+    overflow-wrap: break-word;
+}
+
+
+@media (min-width:768px){
+   .main__section{
+    flex-direction: row;
+    justify-content: space-between;
+   }
+   .main__section__encriptar, .main__section__desencriptar{
+    width: 50%;
+}
+}
+@media (min-width:992px){
+    .main{
+        height: 70vh;
+        display: flex;
+        gap: 24px;
+    }
+    .main__div{
+        width: 65%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+    .main__text{
+       min-height: 75%;
+    }
+    .main__section__mensaje{
+        width: 35%;
+        height: 100%;
+        justify-content: center;
+        margin-top: 0;
+    }
+    .main__section{
+        justify-content: center;
+        flex-direction: row;
+    }
+   
+    
+
+}
